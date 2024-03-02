@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Subject Search</title>
+    </head>
+    <body>
+        <h1>File Name:</h1>
+        <form action="{{ url_for('load') }}" method="POST">
+            <p>
+                <input type="text" name="file">
+                <input type="submit" value="Load"> 
+            </p>            
+        </form>
+        <form action="{{ url_for('search')}}" method="POST">
+            <h1>
+                Subject Search
+            </h1>
+            </p>
+                Subject: <input type="text" name="subject">
+                <input type="submit" value="search">
+            </p>
+        </form>
+        <form action="{{ url_for('docsearch') }}" method="POST">
+            <h1>Document Search</h1>
+            <p>
+               Field 1:
+               <p>
+                   <input type="text" name="f1">
+                   <input type="text" name="f1_con">
+               </p> 
+            </p>
+            <p>
+               Field 2:
+               <p>
+                   <input type="text" name="f2">
+                   <input type="text" name="f2_con">
+               </p> 
+            </p>
+            <p>
+               Field 3:
+               <p>
+                   <input type="text" name="f3">
+                   <input type="text" name="f3_con">
+               </p> 
+            </p>
+            <input type="submit" value="Search">          
+        </form>
+    </body>
+</html>

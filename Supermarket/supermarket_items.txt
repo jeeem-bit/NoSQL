@@ -1,0 +1,66 @@
+<item_name>,<item_type>,<price>,<discount_in_percent>
+Apples,Fruits,0.7,10
+Bananas,Fruits,1.8,10
+Berries,Fruits,0.2,10
+Grapes,Fruits,0.4,10
+Lemons,Fruits,1.8,10
+Lime,Fruits,1.3,10
+Melons,Fruits,0.7,10
+Nectarines,Fruits,0.9,10
+Oranges,Fruits,0.6,10
+Peaches,Fruits,1.8,10
+Pears,Fruits,0.3,10
+Plums,Fruits,0.3,10
+Strawberries,Fruits,1.0,10
+Watermelon,Fruits,0.3,10
+Asparagus,Vegetables,0.9,10
+Broccoli,Vegetables,0.2,10
+Cabbage,Vegetables,0.0,10
+Carrots,Vegetables,0.2,10
+Cauliflower,Vegetables,2.6,10
+Celery,Vegetables,2.4,10
+Corn,Vegetables,2.5,10
+Garlic,Vegetables,1.9,10
+Lettuce,Vegetables,1.7,10
+Mushrooms,Vegetables,0.6,10
+Onions,Vegetables,1.6,10
+Peppers,Vegetables,1.2,10
+Potato,Vegetables,0.9,10
+Squash,Vegetables,0.1,10
+Sweet Potato,Vegetables,0.3,10
+Tomatoes,Vegetables,0.6,10
+Zucchini,Vegetables,0.2,10
+Butter,Dairy,3.3,15
+Cheese,Dairy,4.9,15
+Cottage Cheese,Dairy,5.5,15
+Cream Cheese,Dairy,2.3,15
+Creamer,Dairy,2.9,15
+Eggs,Dairy,2.7,15
+Margarine,Dairy,2.8,15
+Milk,Dairy,4.9,15
+Sliced Cheese,Dairy,5.8,15
+Sour Cream,Dairy,5.8,15
+Yogurt,Dairy,5.0,15
+Anti-Bacterial Soap,Toiletries,7.1,5
+Deodorant,Toiletries,7.7,5
+Floss,Toiletries,4.5,5
+Lotion,Toiletries,5.5,5
+Mouthwash,Toiletries,8.9,5
+Petroleum Jelly,Toiletries,6.6,5
+Razors,Toiletries,4.0,5
+Shampoo,Toiletries,8.9,5
+Shaving Cream,Toiletries,8.2,5
+Soap,Toiletries,8.1,5
+Toothbrush,Toiletries,8.0,5
+Toothpaste,Toiletries,4.6,5
+Candy,Snacks,3.9,0
+Cookies,Snacks,3.0,0
+Crackers,Snacks,4.1,0
+Nuts,Snacks,1.0,0
+Popcorn,Snacks,3.8,0
+Potato Chips,Snacks,1.0,0
+Pretzels,Snacks,1.3,0
+Raisins,Snacks,1.2,0
+Cooking Spray,Oil,5.5,30
+Olive Oil,Oil,5.7,30
+Vegetable Oil,Oil,6.4,30

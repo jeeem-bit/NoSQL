@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subject Search</title>
+        <style>
+            td, th{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Records
+        </h1>
+        <table style="width:100%">
+            <tr>
+                <th>_id</th>
+                <th>name</th>
+                <th>class</th>
+                <th>EL</th>
+                <th>CL</th>
+                <th>Math</th>
+                <th>Phy</th>
+                <th>Bio</th>
+                <th>Chem</th>
+            </tr>
+            {% for doc in result_list %}
+            <tr>
+                <td>{{ doc[0] }}</td>
+                <td>{{ doc[1] }}</td>
+                <td>{{ doc[2] }}</td>
+                <td>{{ doc[3] }}</td>
+                <td>{{ doc[4] }}</td>
+                <td>{{ doc[5] }}</td>
+                <td>{{ doc[6] }}</td>
+                <td>{{ doc[7] }}</td>
+                <td>{{ doc[8] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    <button onclick="location.href='search.html'">Back</button>
+    </body>
+</html>

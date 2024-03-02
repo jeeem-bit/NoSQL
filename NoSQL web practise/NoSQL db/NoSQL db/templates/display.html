@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subject Search</title>
+    </head>
+    <body>
+        <h1>
+            Records
+        </h1>
+        <table style="width:100%">
+            <tr>
+                <th style="text-align:center">_id</th>
+                <th style="text-align:center">Name</th>
+                <th style="text-align:center">Class</th>
+            </tr>
+            {%for row in result_list%}
+            <tr>
+                <td style="text-align:center">{{ row[0] }}</td>
+                <td style="text-align:center">{{ row[1] }}</td>
+                <td style="text-align:center">{{ row[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+    <button onclick="location.href='search.html'">Back</button>
+</html>

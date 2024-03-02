@@ -1,0 +1,33 @@
+Q4. db.students.find()
+Q5. db.students.find().count() 6
+Q6. db.students.find({$or: [{class:"4B"}, {class:"3G"}]})
+    Suggested answer: db.students.find({class: {$in: ["4B", "3G"]})
+
+Q7. db.students.find({language:{$all:["EL"]}},{_id:0, age:0, skills:0, language:0})
+    Suggested answer: db.students.find({language:"EL"},{name:1, class:1})
+
+Q8. db.students.find({language:{$all:["EL","CL"]}})
+    Suggested answer: db.students.find({$and: [{language:"EL"},{language:"CL"}]})
+    
+Q9. db.students.find({skills:{"$in":["Swimming", "Video Editing"]}, age:{"$gt":12}})
+
+Exercise 2 
+db.fruitstores.insert({_id:1, shop:"qPay", manpower:{director:1, manager:2, staff:30}, product:[{name:"apple", price:3}, {name:"mango", price:4}]})
+db.fruitstores.insert({_id:2, shop:"Hop", manpower:{director:2, manager:5, staff:102}, product:[{name:"mango", price:5}, {name:"banana", price:2}, {name:"orange", price:3}]})
+db.fruitstores.insert({_id:3, shop:"Amz", manpower:{director:1, manager:3, staff:45}, product:[{name:"banana", price:3}, {name:"peach", price:5}, {name:"durian", price:12}]})
+db.fruitstores.insert({_id:4, shop:"Baye", manpower:{director:2, manager:6, staff:50}, product:[{name:"apple", price:4}, {name:"peach", price:5}, {name:"kiwi", price:8}]})
+db.fruitstores.insert({_id:5, shop:"Best", manpower:{director:1, manager:2, staff:32}, product:[{name:"orange", price:4}, {name:"durian", price:13}]})
+db.fruitstores.insert({_id:6, shop:"Xyz", manpower:{director:1, manager:1, staff:25}, product:[{name:"apple", price:3}, {name:"peach", price:6}, {name:"durian", price:14}]})
+
+Q4. 
+a)db.fruitstores.find({$and: [{"manpower.director":1},{"manpower.staff":{"$gt":30}}]})
+b)db.fruitstores.find({$and: [{"manpower.manager":{"$gt":2}}, {}]})
+c)db.fruitstores.find({"products.name":"apple"})
+d)db.fruitstores.find({"products":{$size:2})
+e)db.fruitstores.find({"products.prize":4})
+f)db.fruitstores.find({$and: [{"products.name":"orange"}, {"products.name":{$nin:["peach"]}}]})
+g)db.fruitstores.find({"manpower.director":{$exists:false}})
+
+Q5. db.fruitstores.update({shop:"Xyz"}, {$unset:{"manpower.director":""}})
+Q6. db.fruitstores.updateMany({"product.name":"mango"}, {$set:{"product.$.price":6}})
+x

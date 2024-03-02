@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="{{url_for('load')}}" method="POST">
+            <h1>File Name:</h1>
+            <input type="text" name="file">
+            <input type="submit" value="Load">
+        </form>
+        <form action="{{url_for('search')}}" method="POST">
+            <h1>Crime Type Search</h1>
+            <p>Crime Type:<input type="text" name="Type"></p>
+            <input type="submit" value="Filter">
+        </form>
+    </body>
+</html>

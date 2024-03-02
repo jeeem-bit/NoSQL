@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            td, th{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Records</h1>
+        <table style="width:100%">
+            <tr>
+                <th>_id</th>
+                <th>accused</th>
+                <th>age</th>
+            </tr>
+            {% for doc in result_list %}
+            <tr>
+                <td>{{ doc[0] }}</td>
+                <td>{{ doc[1] }}</td>
+                <td>{{ doc[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/">
+            <button>Back</button>
+        </a>
+    </body>
+</html>
